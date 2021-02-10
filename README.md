@@ -16,7 +16,7 @@ sourcescape up <project_folder_1> <project_folder_2>
 Select repos you want to watch and index.
 Wait for initial index to finish.
 
-![image](images/repo_select.png)
+<img src="images/repo_select.png" height="300" />
 
 
 
