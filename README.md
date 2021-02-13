@@ -44,7 +44,7 @@ Wait for the initial index to finish.
 
 **Indexing Indicator** - When SourceScape is indexing or re-indexing a repo, you'll see a loading indicator here. You can click it to get an indexing panel showing progress.
 
-**Saved Query Indicator** - You can save queries with cmd+s. If the query you're using is a saved query, there will be an indicator with the name of the query.
+**Saved Query Indicator** - You can save queries with cmd+s. If the query you're using is a [saved query](#saving), there will be an indicator with the name of the query.
 
 **Cache indicator** - This indicates whether or not you're using the cache, which enables [scrolling](#scrolling) through the [result](#results) set.
 
@@ -195,7 +195,7 @@ If you want to go through all the results, click "Fetch all". This loads the que
 
 ### Selection
 
-The variables of a SourceScape query can span many parts of a file and even across files.
+The variables of a SourceScape query can span many parts of a file and even across files. What gets displayed in the results will depend on the variable you've selected.
 
 For example, selecting the first part of this query will show the code block with the function itself.
 
@@ -205,32 +205,49 @@ The second part of the query will show the code block where the function is bein
 
 <img src="images/selection_2.png" />
 
-Any variable can be selected from the hover menu.
-
-## Targeting
-
-SourceScape allows you to target your query to specific 
-
-*
-
-Repo
-
-Repo Branch
-
-Repo SHA
-
-File filter
-
-You can also save targeting with shift+cmd+s
-
+You can select a variable from its hover menu.
 
 ## Command bar
 
 The command bar is the main point of interaction for selecting targeting and getting saved queries.
 
-cmd+shift+p
+You can open the command bar with `command + shift + p`.
 
-Repos
-Branches and commits (when a repo is selected)
-Saved queries
-Saved targeting
+### Targeting
+
+SourceScape allows you to target your query to a specific repo, repo / branch, or repo / commit.
+
+You first need to search for and select the repo. This will watch that repo's directory for changes. Any changes to files in that directory will update your query window.
+
+<img src="images/command_1.png" />
+
+Once a repo is selected you can search for active branches within that repo. Selecting a branch will query that branch specifically instead of simply whatever is active in the directory.
+
+<img src="images/command_2.png" />
+
+You can also search for and select a specific commit.
+
+<img src="images/command_3.png" />
+
+Specifying a file filter allows you to only query specific files. This is especially useful for mono-repos.
+
+<img src="images/command_4.png" />
+
+### Saving
+
+You can also save targeting with `shift + command + s`.
+
+<img src="images/command_targeting.png" />
+
+You can save queries with `command + s`.
+
+<img src="images/command_query.png" />
+
+Both will now appear in the command bar search.
+
+
+### Useful commands
+
+`Clear repo targeting`
+`Clear file targeting`
+`watch [new repo]`
