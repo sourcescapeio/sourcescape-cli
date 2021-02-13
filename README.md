@@ -59,9 +59,11 @@ Anywhere you see `___` / `...` - you can add to the query.
 This is context dependent of course.
 
 If you type here, you get an argument:
+
 <img src="images/add_arg.png" />
 
 If you type here, you get an item in the function body:
+
 <img src="images/add_body.png" />
 
 SourceScape will show you the possibilities of what you can insert into that segment of the query.
@@ -91,6 +93,7 @@ to denote that function A must contain return B.
 
 
 A query like this:
+
 <img src="images/big_query.png" />
 
 Will break down into 
@@ -146,15 +149,19 @@ For more advanced queries, it is useful to reference a specific variable.
 For example, suppose we want to find all calls of any function that returns an object with block as a key
 
 We can easily get the function down:
+
 <img src="images/ref_1.png" />
 
 To get calls of that function, you can hover over the function object and select "Reference"
+
 <img src="images/ref_2.png" />
 
 This will get you a reference to the function, which you can turn into a call with `ref[A]()`.
+
 <img src="images/ref_3.png" />
 
 With these references, the interface will annotate the function with `A := ` to make the query a bit clearer.
+
 <img src="images/ref_4.png" />
 
 
@@ -163,6 +170,7 @@ With these references, the interface will annotate the function with `A := ` to 
 Dependencies allow your queries to reach across files.
 
 <img src="images/dep.png" />
+
 For example, this query will search for all classes with a property `test` that is a class D with a render method. D can be in another file, SourceScape will automatically detect the imports and exports.
 
 ## Results
