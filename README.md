@@ -74,7 +74,9 @@ You can Reset the query console from the menu.
 
 For more advanced queries, it's helpful to have an understanding of what's going on behind the scenes.
 
-As you're modifying queries in the visual interface, you're actually manipulating an underlying query language called SrcLog. SrcLog is a logic programming language, basically a very stripped down version of ProLog or DataLog.
+As you're modifying queries in the visual interface, you're actually manipulating an underlying query language called SrcLog. You can see the raw SrcLog for a query by going into the menu and hitting "Debug".
+
+SrcLog is a logic programming language, basically a very stripped down version of ProLog or DataLog.
 
 There are variables, denoted by capital letters A-Z. You can also define constraints on both the variables and relationships behind the variables.
 
@@ -175,20 +177,35 @@ For example, this query will search for all classes with a property `test` that 
 
 ## Results
 
-Click the repo link to open the repo locally or on Github
-Click the file link to either open the file locally or on Github
+As you query, SourceScape will show you the first 10 results.
 
+<img src="images/results_1.png" />
+
+Both the repo link and file link allow you to open in either Github or a local editor.
+
+<img src="images/results_open.png" />
 
 ### Scrolling
 
-As you query, SourceScape will show only the first 10 results.
+If you want to go through all the results, click "Fetch all". This loads the query results into a cache and allows you to scroll through the entire result set.
 
-If you want to get all the results, you will have to click "Fetch all". This loads all the query results into a cache and allows you to scroll through these results. 
+<img src="images/scroll_before.png" />
+
+<img src="images/scroll_after.png" />
 
 ### Selection
 
-SourceScape results can span many parts of a file and even across files. It's important to select the right pieces.
+The variables of a SourceScape query can span many parts of a file and even across files.
 
+For example, selecting the first part of this query will show the code block with the function itself.
+
+<img src="images/selection_1.png" />
+
+The second part of the query will show the code block where the function is being called.
+
+<img src="images/selection_2.png" />
+
+Any variable can be selected from the hover menu.
 
 ## Targeting
 
