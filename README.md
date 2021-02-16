@@ -92,13 +92,13 @@ javascript::return(B).
 ```
 says A must be a function and B must be a return.
 
-Then you can have 
-```
+Then you can say
+```prolog
 javascript::function_contains(A, B).
 ```
-to denote that function A must contain return B.
+to indicate that function A must contain return B.
 
-
+#### Larger example
 A query like this:
 
 <img src="images/big_query.png" />
