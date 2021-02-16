@@ -4,7 +4,7 @@ Sourcescape is only supported on Mac OS for now. Linux and Windows support comin
 
 ### Prereqs
 
-[Install Docker](https://docs.docker.com/docker-for-mac/install/)
+<a href="https://docs.docker.com/docker-for-mac/install/" target="_blank">Install Docker</a>
 
 ```bash
 brew install watchman
