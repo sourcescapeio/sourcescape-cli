@@ -22,6 +22,14 @@ You must point the CLI to the directories you want to mount. The indexer will se
 
 However, it's advised to not go too many levels up as the recursive search can get expensive.
 
+### Upgrading
+
+```bash
+npm install -g @sourcescape/cli
+sourcescape clean --images
+sourcescape up <project_folder_1> <project_folder_2>
+```
+
 # Onboarding
 
 First, select the repos you want to watch and index.
